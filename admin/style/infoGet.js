@@ -8,7 +8,7 @@ function template(post) {
     cloneTemplate = postTemplate.cloneNode(true)
     cloneTemplate.dataset.id = post.id
     cloneTemplate.querySelector('img').src=`data:image/png;base64,${post.photo}`
-    // console.log('data:image/png;base64+'+`${post.photo}`)
+    cloneTemplate.querySelector('.phoneField').innerHTML = `${post.pic}`
     cloneTemplate.querySelector('.fioField').innerHTML = `${post.fio}`
     cloneTemplate.querySelector('.phoneField').innerHTML = `${post.phone}`
     cloneTemplate.querySelector('.kidsField').innerHTML = `${post.kids}`
