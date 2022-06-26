@@ -17,7 +17,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     /*background: #2c2c2c;*/
     /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5));
     background-attachment: fixed;
