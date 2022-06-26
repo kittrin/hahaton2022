@@ -45,7 +45,9 @@ buttonSearch.addEventListener('click', () => {
     })
     if (search.value != '') {
         sendRequest('GET', reqUrl + `part=${search.value}`).then(data => {
+            console.log('гет отправлен')
             for (let i in data) {
+                console.log('СОздание шаблона')
                 console.log(data[i])
                 data[i].block = template(data[i])
             }
