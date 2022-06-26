@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* opacity: 0.9; */
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+.main {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.menu {
+    padding: 10px;
+    height: 50px;
+    width: 100vw;
+    margin: 5px;
+}
+
+.buttonMenu {
+    height: 100%;
+    background-color: white;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.buttonMenu img {
+    height: 100%;
+}
+.infoMenu {
+    position: absolute;
+    transition: transform 0.5s;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100px;
+    align-items: center;
+    padding-left: 5px;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: space-around;
+}
+
+.buttonAddUser, .getQr {
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    width: 80%;
+    height: auto;
+
+
+}
+.addUser, .addQr {
+    background-color: white;
+    transition: background-color 0.5s;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addUser:hover {
+    background-color: #e4e4e4;
+}
+
+.addQr:hover{
+    background-color: #e4e4e4;
+}
+.buttonArchive {
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    width: 70%;
+    height: auto;
+}
+
+.archiveUsers {
+    background-color: white;
+    aspect-ratio: 1/1;
+    transition: background-color 0.5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.archiveUsers:hover {
+    background-color: #e4e4e4;
+}
+
+.buttonExitAcc {
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    width: 65%;
+    height: auto;
+}
+.exitAcc, .addQr {
+    aspect-ratio: 1/1;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: background-color 0.5s;
+}
+.exitAcc:hover {
+    background-color: #e3e3e3;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+/* ШАБЛОН КАРТЫ */
+.template {
+    height: 400px;
+    width: 240px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #F4EBFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 10pt;
+    font-family: 'Inter', sans-serif;
+}
+
+.photoTemplate{
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.template .info {
+    border-top: 1px solid black;
+    height: 60%;
+}
+
+th {
+    text-align: left;
+    color: #848484;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+td {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dost{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.res{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(21, 197, 21);
+    box-shadow: 0px 0px 10px rgb(21, 197, 21);
+    border-radius: 20px;
+}
+.wait {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(231, 176, 37);
+    box-shadow: 0px 0px 10px rgb(231, 176, 37);
+    border-radius: 20px;
+}
+.rej {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(230, 37, 37);
+    box-shadow: 0px 0px 10px rgb(230, 37, 37);
+    border-radius: 20px;
+}
+.ebaQr{
+    font-size: 30pt;
+    width: 50vw;
+    aspect-ratio: 1/1;
+    transition: transform 0.5s;
+    transform: translate(20vw, 0);
+
+}
+/* .forQr{
+    position: absolute;
+    left: 30vw;
+    height: 70%;
+    aspect-ratio: 1/1;
+} */
+.sibQr {
+    position: absolute;
+    transform: translate(-200vw, 0);
+}
+.txtQr {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+.txtQr:hover{
+    background-color: #848484;
+}
+.align {
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}

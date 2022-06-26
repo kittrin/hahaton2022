@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/addUser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Администратор</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <button class="buttonMenu"><img src='img/меню.png'></button>
+            <div class="mmm">
+                <div class="infoMenu">
+                    <div class="addUser">
+                        <img src="img/addUser.png" class="buttonAddUser">
+                        <p class='txt'>Добавить пользователя</p>
+                    </div>
+                    <div class="addUserButtons hiddenAdd">
+                        <div class="worker">
+                            <img src="img/worker.png">
+                            <p class="txt">Добавить сотрудника</p>
+                        </div>
+                        <div class="parents">
+                            <img src="img/parents.png">
+                            <p class='txt'>Добавить родителя</p>
+                        </div>
+                        <div class="kids">
+                            <img src="img/kids.png">
+                            <p class='txt'>Добавить ребенка</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class='archiveUsers'>
+                            <img src="img/archive.png" class='buttonArchive'>
+                            <p class="txt">Архив пользователей</p>
+                        </div>
+                        <div class="archiveButtons hiddenAdd">
+                            <div class="archiveWorker">
+                                <img src="img/archive.png" class="">
+                                <p class="txt">Сотрудники</p>
+                            </div>
+                            <div class='archiveParents'>
+                                <img src="img/archive.png" class="">
+                                <p class="txt">Родители</p>
+                            </div>
+                            <div class="archiveKids">
+                                <img src="img/archive.png" class="">
+                                <p class="txt">Дети</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='archiveVer'>
+                        <img src="img/archive.png" class="">
+                        <p class='txt'>В ожидании</p>
+                    </div>
+                    <div class='exitAcc'>
+                        <img src="img/ExitAcc.png" class="buttonExitAcc">
+                        <p class="txt">Выход</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='cards'>
+            <div class="templateHide">
+                <div class="template" data-id="">
+                    <img src="img/grandmother.jpg" alt="grape" class="photoTemplate">
+                    <div class="info">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>ФИО:</th>
+                                    <td class="fioField">-</td>
+                                </tr>
+                                <tr>
+                                    <th>Телефон:</th>
+                                    <td class="phoneField">-</td>
+                                </tr>
+                                <tr>
+                                    <th>Дети</th>
+                                    <td class="kidsField">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="buttonsYesNo hidYesNo">
+                        <img src="img/res.png" class="yes" name="b">
+                        <img src="img/rej.png" class="no" name="b">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="style/verUser.js"></script>
+    <script src="style/appParent.js"></script>
+    <script src="style/infoGet.js"></script>
+    <script src="https://kit.fontawesome.com/f5e35437dd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

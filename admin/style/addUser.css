@@ -1,0 +1,63 @@
+.addUserButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    position: absolute;
+    left: 150px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.5s;
+}
+
+.worker, .parents, .kids{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    height: 100%;
+    justify-content: center;
+}
+.worker:hover, .parents:hover, .kids:hover{
+    background-color: #e3e3e3;
+}
+.hiddenAdd{
+    transform: translate(-500px, 0);
+}
+.archiveButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    position: absolute;
+    left: 150px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.5s;
+}
+.archiveParents, .archiveWorker, .archiveKids {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    height: 100%;
+    justify-content: center;
+}
+.archiveParents:hover, .archiveWorker:hover, .archiveKids:hover {
+    background-color: #e3e3e3;
+}
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.archiveButtons img{
+    display: block;
+}
+a {
+    text-decoration: none;
+}

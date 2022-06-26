@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* opacity: 0.9; */
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /*background: #2c2c2c;*/
+    /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5));
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 100; */
+}
+
+/* МЕНЮ */
+.menu {
+    padding: 10px;
+    height: 50px;
+    width: 100vw;
+    margin: 5px;
+}
+
+.buttonMenu {
+    height: 100%;
+    background-color: white;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonMenu img {
+    height: 100%;
+}
+
+
+/* КАРТЫ */
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 50px;
+    height: 100%;
+}
+
+/* ШАБЛОН КАРТЫ */
+.template {
+    height: 400px;
+    width: 240px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #F4EBFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 10pt;
+    font-family: 'Inter', sans-serif;
+}
+
+.photoTemplate{
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.template .info {
+    border-top: 1px solid black;
+}
+
+th {
+    text-align: left;
+    color: #848484;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+td {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*ВЫЛЕТАЮЩЕЕ МЕНЮ */
+.infoMenu {
+    position: absolute;
+    transition: transform 0.5s;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 150px;
+    align-items: center;
+    padding-left: 5px;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.buttonAddUser {
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    width: 80%;
+    height: auto;
+
+
+}
+
+.addUser {
+    background-color: white;
+    transition: background-color 0.5s;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addUser:hover {
+    background-color: #e4e4e4;
+}
+
+
+.buttonArchive {
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    width: 70%;
+    height: auto;
+}
+
+.archiveUsers {
+    background-color: white;
+    aspect-ratio: 1/1;
+    transition: background-color 0.5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.archiveUsers:hover {
+    background-color: #e4e4e4;
+}
+
+.buttonExitAcc {
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    width: 65%;
+    height: auto;
+}
+
+.exitAcc, .archiveVer {
+    aspect-ratio: 1/1;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: background-color 0.5s;
+}
+
+.exitAcc:hover {
+    background-color: #e3e3e3;
+}
+.archiveVer:hover {
+    background-color: #e3e3e3;
+}
+.hidden {
+    transform: translate(0, -110vh);
+}
+
+.buttonsYesNo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.yes, .no{
+    height: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+.hidYesNo{
+    visibility: hidden;
+}
+.templateHide{
+    display: none;
+}

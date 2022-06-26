@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <h1>Регистрация ребенка</h1>
+    <div class="anketa">
+        <form action="#" class="forminfo">
+            <div class='photo'>
+                <label for="fileInput" class="photo1">
+                    <img src="img/camera.png" name="img">
+                    <p class="txt">Добавить фото</p>
+                </label>
+                <input type="file" id="fileInput">
+
+            </div>
+            <div class='info'>
+                <div class='infoFio'>
+                    <textarea name="fioText" placeholder="ФИО:" rows="2" required></textarea>
+                </div>
+                <div class="infoPhone">
+                    <textarea name="phoneText" placeholder="Номер телефона:" rows="2" required></textarea>
+                </div>
+                <div class="numberZ">
+                    <textarea name="numberSchool" placeholder="Номер заведения: " rows="2" required></textarea>
+                </div>
+                <div class="idKids">
+                    <textarea name="idKidsText" placeholder="Номер группы: " rows="2" required></textarea>
+                </div>
+            </div>
+            <div class="sendInfo">
+            <button>ДОБАВИТЬ</button>
+            </div>
+        </form>
+    </div>
+    <script src="appAddKids.js"></script>
+</body>
+
+</html>
