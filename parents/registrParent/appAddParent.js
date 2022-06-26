@@ -1,4 +1,4 @@
-const requestURL = 'http://hakatonkrasnodar.pythonanywhere.com/send_to_verification_users?type=2&'
+const requestURL = 'https://hakatonkrasnodar.pythonanywhere.com/add_user?'
 const button = document.querySelector('.sendInfo')
 const fio = document.getElementsByName('fioText')[0]
 const phone = document.getElementsByName('phoneText')[0]
@@ -50,9 +50,9 @@ fileInput.addEventListener('change', (e) => {
 button.addEventListener('click', (event) => {
     event.preventDefault()
     console.log('click')
-    if ((fio.value != '') && (phone.value != '')) {
+    if ((fio.value != '') && (phone.value != '') && (number.value != '')) {
         console.log('after if')
-        sendRequest('POST', requestURL + `fio=${fio.value}` + `&pic=${img.src}` + '&inst=0' + `&phone=${phone.value}`+`&kid=${kids.value}`).then(() => {
+        sendRequest('POST', requestURL + 'type=2' + `&fio=${fio.value}` + `&group=${number.value}` + `&pic=${img.src}` + '&inst=0' + `&phone=${phone.value}`+`&kid=${kids.value}`).then(() => {
             console.log('goooooooooooooooooood')
             fio.value=''
             phone.value=''
