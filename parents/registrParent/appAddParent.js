@@ -1,4 +1,4 @@
-const requestURL = 'https://hakatonkrasnodar.pythonanywhere.com/add_user?'
+const requestURL = 'https://hakatonkrasnodar.pythonanywhere.com/send_to_verification_users?'
 const button = document.querySelector('.sendInfo')
 const fio = document.getElementsByName('fioText')[0]
 const phone = document.getElementsByName('phoneText')[0]

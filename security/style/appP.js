@@ -38,7 +38,8 @@ function sendRequest(method, url, body = null) {
     })
 }
 
-buttonSearch.addEventListener('click', () => {
+buttonSearch.addEventListener('click', (event) => {
+    event.preventDefault()
     arrCards = cards.querySelectorAll('.template')
     arrCards.forEach(block => {
         block.remove()

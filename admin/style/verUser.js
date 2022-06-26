@@ -31,8 +31,9 @@ function templateVer(post) {
     cloneTemplate = postTemplate.cloneNode(true)
     cloneTemplate.dataset.id = post.id
     cloneTemplate.querySelector('.fioField').innerHTML = `${post.fio}`
-    cloneTemplate.querySelector('.phoneField').innerHTML = `${post.phone}`
+    cloneTemplate.querySelector('.phoneField').innerHTML = `${post.pic}`
     cloneTemplate.querySelector('.kidsField').innerHTML = `${post.kids}`
+    cloneTemplate.querySelector('img').src=`data:image/png;base64,${post.photo}`
     cloneTemplate.querySelector('.buttonsYesNo').classList.remove('hidYesNo')
     cloneTemplate.querySelector('.yes').addEventListener('click', ()=>{
         sendRequest('POST', urlSendVer+`id=${post.id}`+`&ver=1`).then(()=>{
